@@ -1,0 +1,2782 @@
+{
+  "Knee": {
+    "bodyArea": "Knee",
+    "configId": "knee-koos-jr",
+    "title": "KOOS, JR — Knee / الركبة",
+    "description": "Knee injury and Osteoarthritis Outcome Score – Joint Replacement (KOOS-JR). 7 items (Saudi-Arabic version). Raw 0–28 converted via official Rasch table to 0–100 (100 = no disability, 0 = worst).",
+    "promName": "KOOS, JR",
+    "scoreCalculation": "koos_hoos_jr",
+    "scoreDirection": "higher_better",
+    "rawMax": 28,
+    "conversionTable": {
+      "0": 100.0,
+      "1": 91.975,
+      "2": 84.6,
+      "3": 79.914,
+      "4": 76.332,
+      "5": 73.342,
+      "6": 70.704,
+      "7": 68.284,
+      "8": 65.994,
+      "9": 63.776,
+      "10": 61.583,
+      "11": 59.381,
+      "12": 57.14,
+      "13": 54.84,
+      "14": 52.465,
+      "15": 50.012,
+      "16": 47.487,
+      "17": 44.905,
+      "18": 42.281,
+      "19": 39.625,
+      "20": 36.931,
+      "21": 34.174,
+      "22": 31.307,
+      "23": 28.251,
+      "24": 24.875,
+      "25": 21.084,
+      "26": 16.93,
+      "27": 11.883,
+      "28": 0.0
+    },
+    "icon": "🦵",
+    "sections": [
+      {
+        "id": "intake",
+        "title": "Pain Intake / تقييم شدة الألم",
+        "questions": [
+          {
+            "id": "pain_scale",
+            "type": "numeric",
+            "required": true,
+            "text": "مستوى الألم الآن (0-10)  /  Current Pain Level (0–10)",
+            "description": "0 = لا يوجد ألم (No pain) ← → 10 = أشد ألم يتخيله العقل (Worst imaginable)",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "scoreValues": null
+          }
+        ]
+      },
+      {
+        "id": "koos_jr",
+        "title": "KOOS, JR — استبيان الركبة (7 أسئلة)",
+        "questions": [
+          {
+            "id": "kj_S6",
+            "type": "radio",
+            "required": true,
+            "text": "S6. كيف تكون شدة التصلب في ركبتك بعد الاستيقاظ صباحاً؟\n(How severe is your knee stiffness after first waking in the morning?)",
+            "options": [
+              "لا يوجد (None)",
+              "خفيف (Mild)",
+              "متوسط (Moderate)",
+              "شديد (Severe)",
+              "شديد جداً (Extreme)"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "kj_P2",
+            "type": "radio",
+            "required": true,
+            "text": "P2. الإلتواء / اللف على ركبتك\n(Twisting / pivoting on your knee)",
+            "options": [
+              "لا يوجد (None)",
+              "خفيف (Mild)",
+              "متوسط (Moderate)",
+              "شديد (Severe)",
+              "شديد جداً (Extreme)"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "kj_P3",
+            "type": "radio",
+            "required": true,
+            "text": "P3. مد الركبة بالكامل\n(Straightening your knee fully)",
+            "options": [
+              "لا يوجد (None)",
+              "خفيف (Mild)",
+              "متوسط (Moderate)",
+              "شديد (Severe)",
+              "شديد جداً (Extreme)"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "kj_P6",
+            "type": "radio",
+            "required": true,
+            "text": "P6. صعود أو نزول الدرج\n(Going up or down stairs)",
+            "options": [
+              "لا يوجد (None)",
+              "خفيف (Mild)",
+              "متوسط (Moderate)",
+              "شديد (Severe)",
+              "شديد جداً (Extreme)"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "kj_P9",
+            "type": "radio",
+            "required": true,
+            "text": "P9. الوقوف باستقامة\n(Standing upright)",
+            "options": [
+              "لا يوجد (None)",
+              "خفيف (Mild)",
+              "متوسط (Moderate)",
+              "شديد (Severe)",
+              "شديد جداً (Extreme)"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "kj_A3",
+            "type": "radio",
+            "required": true,
+            "text": "A3. القيام من وضع الجلوس\n(Rising from sitting)",
+            "options": [
+              "لا يوجد (None)",
+              "خفيف (Mild)",
+              "متوسط (Moderate)",
+              "شديد (Severe)",
+              "شديد جداً (Extreme)"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "kj_A5",
+            "type": "radio",
+            "required": true,
+            "text": "A5. الإنحناء لإلتقاط شيء من الأرض\n(Bending to floor / pick up an object)",
+            "options": [
+              "لا يوجد (None)",
+              "خفيف (Mild)",
+              "متوسط (Moderate)",
+              "شديد (Severe)",
+              "شديد جداً (Extreme)"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Hip": {
+    "bodyArea": "Hip",
+    "configId": "hip-hoos-full",
+    "title": "HOOS Full — Hip / الورك",
+    "description": "Hip disability and Osteoarthritis Outcome Score – Full version (HOOS). 40 items across 6 subscales (Symptoms, Stiffness, Pain, Daily Living, Sport, QoL). Each item scored 0–4 (0=Extreme, 4=None). Final score: (rawSum / 160) × 100 → 0–100 (100 = no disability).",
+    "promName": "HOOS",
+    "scoreCalculation": "sefas",
+    "scoreDirection": "higher_better",
+    "rawMax": 160,
+    "conversionTable": null,
+    "icon": "🦴",
+    "sections": [
+      {
+        "id": "intake",
+        "title": "Pain Intake / تقييم شدة الألم",
+        "questions": [
+          {
+            "id": "pain_scale",
+            "type": "numeric",
+            "required": true,
+            "text": "مستوى الألم الآن (0-10)  /  Current Pain Level (0–10)",
+            "description": "0 = لا يوجد ألم (No pain) ← → 10 = أشد ألم يتخيله العقل (Worst imaginable)",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "scoreValues": null
+          }
+        ]
+      },
+      {
+        "id": "hoos_symptoms",
+        "title": "Symptoms / الأعراض",
+        "questions": [
+          {
+            "id": "h_S1",
+            "type": "radio",
+            "required": true,
+            "text": "S1. Do you feel grinding, hear clicking or any other type of noise from your hip?",
+            "options": [
+              "Never",
+              "Rarely",
+              "Sometimes",
+              "Often",
+              "Always"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_S2",
+            "type": "radio",
+            "required": true,
+            "text": "S2. Difficulties spreading legs wide apart",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_S3",
+            "type": "radio",
+            "required": true,
+            "text": "S3. Difficulties to stride out when walking",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hoos_stiffness",
+        "title": "Stiffness / التيبس",
+        "questions": [
+          {
+            "id": "h_S4",
+            "type": "radio",
+            "required": true,
+            "text": "S4. How severe is your hip joint stiffness after first wakening in the morning?",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_S5",
+            "type": "radio",
+            "required": true,
+            "text": "S5. How severe is your hip stiffness after sitting, lying or resting later in the day?",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hoos_pain",
+        "title": "Pain / الألم",
+        "questions": [
+          {
+            "id": "h_P1",
+            "type": "radio",
+            "required": true,
+            "text": "P1. How often is your hip painful?",
+            "options": [
+              "Never",
+              "Monthly",
+              "Weekly",
+              "Daily",
+              "Always"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_P2",
+            "type": "radio",
+            "required": true,
+            "text": "P2. What amount of pain have you experienced — Straightening your hip fully?",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_P3",
+            "type": "radio",
+            "required": true,
+            "text": "P3. Bending your hip fully",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_P4",
+            "type": "radio",
+            "required": true,
+            "text": "P4. Walking on a flat surface",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_P5",
+            "type": "radio",
+            "required": true,
+            "text": "P5. Going up or down stairs",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_P6",
+            "type": "radio",
+            "required": true,
+            "text": "P6. At night while in bed",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_P7",
+            "type": "radio",
+            "required": true,
+            "text": "P7. Sitting or lying",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_P8",
+            "type": "radio",
+            "required": true,
+            "text": "P8. Standing upright",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_P9",
+            "type": "radio",
+            "required": true,
+            "text": "P9. Walking on a hard surface (asphalt, concrete, etc.)",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_P10",
+            "type": "radio",
+            "required": true,
+            "text": "P10. Walking on an uneven surface",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hoos_adl",
+        "title": "Function, Daily Living / الأنشطة اليومية",
+        "questions": [
+          {
+            "id": "h_A1",
+            "type": "radio",
+            "required": true,
+            "text": "A1. Descending stairs",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A2",
+            "type": "radio",
+            "required": true,
+            "text": "A2. Ascending stairs",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A3",
+            "type": "radio",
+            "required": true,
+            "text": "A3. Rising from sitting",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A4",
+            "type": "radio",
+            "required": true,
+            "text": "A4. Standing",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A5",
+            "type": "radio",
+            "required": true,
+            "text": "A5. Bending to floor / pick up an object",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A6",
+            "type": "radio",
+            "required": true,
+            "text": "A6. Walking on flat surface",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A7",
+            "type": "radio",
+            "required": true,
+            "text": "A7. Getting in / out of car",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A8",
+            "type": "radio",
+            "required": true,
+            "text": "A8. Going shopping",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A9",
+            "type": "radio",
+            "required": true,
+            "text": "A9. Putting on socks / stockings",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A10",
+            "type": "radio",
+            "required": true,
+            "text": "A10. Rising from bed",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A11",
+            "type": "radio",
+            "required": true,
+            "text": "A11. Taking off socks / stockings",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A12",
+            "type": "radio",
+            "required": true,
+            "text": "A12. Lying in bed (turning over, maintaining hip position)",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A13",
+            "type": "radio",
+            "required": true,
+            "text": "A13. Getting in / out of bath",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A14",
+            "type": "radio",
+            "required": true,
+            "text": "A14. Sitting",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A15",
+            "type": "radio",
+            "required": true,
+            "text": "A15. Getting on / off toilet",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A16",
+            "type": "radio",
+            "required": true,
+            "text": "A16. Heavy domestic duties (moving heavy boxes, scrubbing floors, etc.)",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_A17",
+            "type": "radio",
+            "required": true,
+            "text": "A17. Light domestic duties (cooking, dusting, etc.)",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hoos_sport",
+        "title": "Sport & Recreation / الرياضة والترفيه",
+        "questions": [
+          {
+            "id": "h_SP1",
+            "type": "radio",
+            "required": true,
+            "text": "SP1. Squatting",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_SP2",
+            "type": "radio",
+            "required": true,
+            "text": "SP2. Running",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_SP3",
+            "type": "radio",
+            "required": true,
+            "text": "SP3. Twisting / pivoting on your injured hip",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_SP4",
+            "type": "radio",
+            "required": true,
+            "text": "SP4. Walking on uneven surface",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hoos_qol",
+        "title": "Quality of Life / جودة الحياة",
+        "questions": [
+          {
+            "id": "h_Q1",
+            "type": "radio",
+            "required": true,
+            "text": "Q1. How often are you aware of your hip problem?",
+            "options": [
+              "Never",
+              "Monthly",
+              "Weekly",
+              "Daily",
+              "Always"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_Q2",
+            "type": "radio",
+            "required": true,
+            "text": "Q2. Have you modified your life style to avoid potentially damaging activities to your hip?",
+            "options": [
+              "Not at all",
+              "Mildly",
+              "Moderately",
+              "Severely",
+              "Totally"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_Q3",
+            "type": "radio",
+            "required": true,
+            "text": "Q3. How much are you troubled with lack of confidence in your hip?",
+            "options": [
+              "Not at all",
+              "Mildly",
+              "Moderately",
+              "Severely",
+              "Extremely"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "h_Q4",
+            "type": "radio",
+            "required": true,
+            "text": "Q4. In general, how much difficulty do you have with your hip?",
+            "options": [
+              "None",
+              "Mild",
+              "Moderate",
+              "Severe",
+              "Extreme"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Shoulder": {
+    "bodyArea": "Shoulder",
+    "configId": "shoulder-quickdash",
+    "title": "QuickDASH — Shoulder / الكتف",
+    "description": "QuickDASH — 11-item short form of Disabilities of the Arm, Shoulder and Hand (Arabic). Each item scored 1–5 (1=No difficulty/None, 5=Unable/Extreme). Formula: ((sum/n) − 1) × 25 → 0–100 (0=no disability, 100=maximum disability). Minimum 10 of 11 items required.",
+    "promName": "QuickDASH",
+    "scoreCalculation": "quickdash",
+    "scoreDirection": "lower_better",
+    "rawMax": 55,
+    "conversionTable": null,
+    "icon": "🙆",
+    "sections": [
+      {
+        "id": "intake",
+        "title": "Pain Intake / تقييم شدة الألم",
+        "questions": [
+          {
+            "id": "pain_scale",
+            "type": "numeric",
+            "required": true,
+            "text": "مستوى الألم الآن (0-10)  /  Current Pain Level (0–10)",
+            "description": "0 = لا يوجد ألم (No pain) ← → 10 = أشد ألم يتخيله العقل (Worst imaginable)",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "scoreValues": null
+          }
+        ]
+      },
+      {
+        "id": "shoulder_activities",
+        "title": "الأنشطة اليومية / Daily Activities (Items 1–6)",
+        "questions": [
+          {
+            "id": "qd_1",
+            "type": "radio",
+            "required": true,
+            "text": "1. فتح مرطبان أو غطاء محكم الإغلاق\n   (Open a tight or new jar)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_2",
+            "type": "radio",
+            "required": true,
+            "text": "2. القيام بأعمال منزلية تتطلب مجهودًا بالذراع\n   (Do heavy household chores)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_3",
+            "type": "radio",
+            "required": true,
+            "text": "3. حمل كيس مشتريات أو حقيبة\n   (Carry a shopping bag or briefcase)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_4",
+            "type": "radio",
+            "required": true,
+            "text": "4. غسل أو الوصول إلى منطقة الظهر\n   (Wash your back)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_5",
+            "type": "radio",
+            "required": true,
+            "text": "5. استخدام السكين لتقطيع الطعام\n   (Use a knife to cut food)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_6",
+            "type": "radio",
+            "required": true,
+            "text": "6. القيام بنشاط ترفيهي يتطلب قوة أو ضغطًا على الذراع/الكتف/اليد\n   (Recreational activities with force/impact through arm, shoulder or hand)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "shoulder_impact",
+        "title": "التأثير الاجتماعي والوظيفي / Social & Work Impact (Items 7–8)",
+        "questions": [
+          {
+            "id": "qd_7",
+            "type": "radio",
+            "required": true,
+            "text": "7. إلى أي درجة أثرت المشكلة على نشاطاتك الاجتماعية؟\n   (During the past week, to what extent has your problem interfered with your normal social activities?)",
+            "options": [
+              "أبداً لا / لا على الإطلاق (Not at all)",
+              "بشكل طفيف (Slightly)",
+              "بشكل متوسط (Moderately)",
+              "كثيراً (Quite a bit)",
+              "بشكل بالغ للغاية (Extremely)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_8",
+            "type": "radio",
+            "required": true,
+            "text": "8. إلى أي درجة حدّت المشكلة من عملك أو نشاطاتك اليومية المعتادة؟\n   (During the past week, were you limited in your work or other regular daily activities?)",
+            "options": [
+              "غير محدود على الإطلاق (Not limited at all)",
+              "محدود بشكل طفيف (Slightly limited)",
+              "محدود بشكل متوسط (Moderately limited)",
+              "محدود جداً (Very limited)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "shoulder_symptoms",
+        "title": "الأعراض والنوم / Symptoms & Sleep (Items 9–11)",
+        "questions": [
+          {
+            "id": "qd_9",
+            "type": "radio",
+            "required": true,
+            "text": "9. ما شدة الألم في الذراع أو الكتف أو اليد؟\n   (Arm, shoulder or hand pain)",
+            "options": [
+              "لا يوجد (None)",
+              "قليلاً (Mild)",
+              "بشكل متوسط (Moderate)",
+              "بشدة (Severe)",
+              "بشدة بالغة (Extreme)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_10",
+            "type": "radio",
+            "required": true,
+            "text": "10. ما شدة التنميل أو الوخز؟\n   (Tingling — pins and needles — in arm, shoulder or hand)",
+            "options": [
+              "لا يوجد (None)",
+              "قليلاً (Mild)",
+              "بشكل متوسط (Moderate)",
+              "بشدة (Severe)",
+              "بشدة بالغة (Extreme)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_11",
+            "type": "radio",
+            "required": true,
+            "text": "11. إلى أي درجة أثرت المشكلة على نومك؟\n   (How much difficulty did you have sleeping because of the pain?)",
+            "options": [
+              "لا صعوبة (No difficulty)",
+              "صعوبة خفيفة (Mild difficulty)",
+              "صعوبة متوسطة (Moderate difficulty)",
+              "صعوبة شديدة (Severe difficulty)",
+              "بحيث لا أقدر على النوم (So much I can't sleep)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Elbow": {
+    "bodyArea": "Elbow",
+    "configId": "elbow-quickdash",
+    "title": "QuickDASH — Elbow / الكوع",
+    "description": "QuickDASH — 11-item short form of Disabilities of the Arm, Shoulder and Hand (Arabic). Formula: ((sum/n) − 1) × 25 → 0–100 (0=no disability, 100=maximum). Minimum 10 of 11 items required.",
+    "promName": "QuickDASH",
+    "scoreCalculation": "quickdash",
+    "scoreDirection": "lower_better",
+    "rawMax": 55,
+    "conversionTable": null,
+    "icon": "💪",
+    "sections": [
+      {
+        "id": "intake",
+        "title": "Pain Intake / تقييم شدة الألم",
+        "questions": [
+          {
+            "id": "pain_scale",
+            "type": "numeric",
+            "required": true,
+            "text": "مستوى الألم الآن (0-10)  /  Current Pain Level (0–10)",
+            "description": "0 = لا يوجد ألم (No pain) ← → 10 = أشد ألم يتخيله العقل (Worst imaginable)",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "scoreValues": null
+          }
+        ]
+      },
+      {
+        "id": "elbow_activities",
+        "title": "الأنشطة اليومية / Daily Activities (Items 1–6)",
+        "questions": [
+          {
+            "id": "qd_1",
+            "type": "radio",
+            "required": true,
+            "text": "1. فتح مرطبان أو غطاء محكم الإغلاق\n   (Open a tight or new jar)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_2",
+            "type": "radio",
+            "required": true,
+            "text": "2. القيام بأعمال منزلية تتطلب مجهودًا بالذراع\n   (Do heavy household chores)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_3",
+            "type": "radio",
+            "required": true,
+            "text": "3. حمل كيس مشتريات أو حقيبة\n   (Carry a shopping bag or briefcase)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_4",
+            "type": "radio",
+            "required": true,
+            "text": "4. غسل أو الوصول إلى منطقة الظهر\n   (Wash your back)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_5",
+            "type": "radio",
+            "required": true,
+            "text": "5. استخدام السكين لتقطيع الطعام\n   (Use a knife to cut food)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_6",
+            "type": "radio",
+            "required": true,
+            "text": "6. القيام بنشاط ترفيهي يتطلب قوة أو ضغطًا على الذراع/الكتف/اليد\n   (Recreational activities with force/impact through arm, shoulder or hand)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "elbow_impact",
+        "title": "التأثير الاجتماعي والوظيفي / Social & Work Impact (Items 7–8)",
+        "questions": [
+          {
+            "id": "qd_7",
+            "type": "radio",
+            "required": true,
+            "text": "7. إلى أي درجة أثرت المشكلة على نشاطاتك الاجتماعية؟\n   (During the past week, to what extent has your problem interfered with your normal social activities?)",
+            "options": [
+              "أبداً لا / لا على الإطلاق (Not at all)",
+              "بشكل طفيف (Slightly)",
+              "بشكل متوسط (Moderately)",
+              "كثيراً (Quite a bit)",
+              "بشكل بالغ للغاية (Extremely)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_8",
+            "type": "radio",
+            "required": true,
+            "text": "8. إلى أي درجة حدّت المشكلة من عملك أو نشاطاتك اليومية المعتادة؟\n   (During the past week, were you limited in your work or other regular daily activities?)",
+            "options": [
+              "غير محدود على الإطلاق (Not limited at all)",
+              "محدود بشكل طفيف (Slightly limited)",
+              "محدود بشكل متوسط (Moderately limited)",
+              "محدود جداً (Very limited)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "elbow_symptoms",
+        "title": "الأعراض والنوم / Symptoms & Sleep (Items 9–11)",
+        "questions": [
+          {
+            "id": "qd_9",
+            "type": "radio",
+            "required": true,
+            "text": "9. ما شدة الألم في الذراع أو الكتف أو اليد؟\n   (Arm, shoulder or hand pain)",
+            "options": [
+              "لا يوجد (None)",
+              "قليلاً (Mild)",
+              "بشكل متوسط (Moderate)",
+              "بشدة (Severe)",
+              "بشدة بالغة (Extreme)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_10",
+            "type": "radio",
+            "required": true,
+            "text": "10. ما شدة التنميل أو الوخز؟\n   (Tingling — pins and needles — in arm, shoulder or hand)",
+            "options": [
+              "لا يوجد (None)",
+              "قليلاً (Mild)",
+              "بشكل متوسط (Moderate)",
+              "بشدة (Severe)",
+              "بشدة بالغة (Extreme)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_11",
+            "type": "radio",
+            "required": true,
+            "text": "11. إلى أي درجة أثرت المشكلة على نومك؟\n   (How much difficulty did you have sleeping because of the pain?)",
+            "options": [
+              "لا صعوبة (No difficulty)",
+              "صعوبة خفيفة (Mild difficulty)",
+              "صعوبة متوسطة (Moderate difficulty)",
+              "صعوبة شديدة (Severe difficulty)",
+              "بحيث لا أقدر على النوم (So much I can't sleep)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Hand & Wrist": {
+    "bodyArea": "Hand & Wrist",
+    "configId": "hand-wrist-quickdash",
+    "title": "QuickDASH — Hand & Wrist / اليد والمعصم",
+    "description": "QuickDASH — 11-item short form of Disabilities of the Arm, Shoulder and Hand (Arabic). Formula: ((sum/n) − 1) × 25 → 0–100 (0=no disability, 100=maximum). Minimum 10 of 11 items required.",
+    "promName": "QuickDASH",
+    "scoreCalculation": "quickdash",
+    "scoreDirection": "lower_better",
+    "rawMax": 55,
+    "conversionTable": null,
+    "icon": "✋",
+    "sections": [
+      {
+        "id": "intake",
+        "title": "Pain Intake / تقييم شدة الألم",
+        "questions": [
+          {
+            "id": "pain_scale",
+            "type": "numeric",
+            "required": true,
+            "text": "مستوى الألم الآن (0-10)  /  Current Pain Level (0–10)",
+            "description": "0 = لا يوجد ألم (No pain) ← → 10 = أشد ألم يتخيله العقل (Worst imaginable)",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "scoreValues": null
+          }
+        ]
+      },
+      {
+        "id": "handwrist_activities",
+        "title": "الأنشطة اليومية / Daily Activities (Items 1–6)",
+        "questions": [
+          {
+            "id": "qd_1",
+            "type": "radio",
+            "required": true,
+            "text": "1. فتح مرطبان أو غطاء محكم الإغلاق\n   (Open a tight or new jar)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_2",
+            "type": "radio",
+            "required": true,
+            "text": "2. القيام بأعمال منزلية تتطلب مجهودًا بالذراع\n   (Do heavy household chores)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_3",
+            "type": "radio",
+            "required": true,
+            "text": "3. حمل كيس مشتريات أو حقيبة\n   (Carry a shopping bag or briefcase)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_4",
+            "type": "radio",
+            "required": true,
+            "text": "4. غسل أو الوصول إلى منطقة الظهر\n   (Wash your back)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_5",
+            "type": "radio",
+            "required": true,
+            "text": "5. استخدام السكين لتقطيع الطعام\n   (Use a knife to cut food)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_6",
+            "type": "radio",
+            "required": true,
+            "text": "6. القيام بنشاط ترفيهي يتطلب قوة أو ضغطًا على الذراع/الكتف/اليد\n   (Recreational activities with force/impact through arm, shoulder or hand)",
+            "options": [
+              "بلا صعوبة (No Difficulty)",
+              "بصعوبة خفيفة (Mild Difficulty)",
+              "بصعوبة متوسطة (Moderate Difficulty)",
+              "بصعوبة شديدة (Severe Difficulty)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "handwrist_impact",
+        "title": "التأثير الاجتماعي والوظيفي / Social & Work Impact (Items 7–8)",
+        "questions": [
+          {
+            "id": "qd_7",
+            "type": "radio",
+            "required": true,
+            "text": "7. إلى أي درجة أثرت المشكلة على نشاطاتك الاجتماعية؟\n   (During the past week, to what extent has your problem interfered with your normal social activities?)",
+            "options": [
+              "أبداً لا / لا على الإطلاق (Not at all)",
+              "بشكل طفيف (Slightly)",
+              "بشكل متوسط (Moderately)",
+              "كثيراً (Quite a bit)",
+              "بشكل بالغ للغاية (Extremely)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_8",
+            "type": "radio",
+            "required": true,
+            "text": "8. إلى أي درجة حدّت المشكلة من عملك أو نشاطاتك اليومية المعتادة؟\n   (During the past week, were you limited in your work or other regular daily activities?)",
+            "options": [
+              "غير محدود على الإطلاق (Not limited at all)",
+              "محدود بشكل طفيف (Slightly limited)",
+              "محدود بشكل متوسط (Moderately limited)",
+              "محدود جداً (Very limited)",
+              "غير قادر (Unable)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "handwrist_symptoms",
+        "title": "الأعراض والنوم / Symptoms & Sleep (Items 9–11)",
+        "questions": [
+          {
+            "id": "qd_9",
+            "type": "radio",
+            "required": true,
+            "text": "9. ما شدة الألم في الذراع أو الكتف أو اليد؟\n   (Arm, shoulder or hand pain)",
+            "options": [
+              "لا يوجد (None)",
+              "قليلاً (Mild)",
+              "بشكل متوسط (Moderate)",
+              "بشدة (Severe)",
+              "بشدة بالغة (Extreme)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_10",
+            "type": "radio",
+            "required": true,
+            "text": "10. ما شدة التنميل أو الوخز؟\n   (Tingling — pins and needles — in arm, shoulder or hand)",
+            "options": [
+              "لا يوجد (None)",
+              "قليلاً (Mild)",
+              "بشكل متوسط (Moderate)",
+              "بشدة (Severe)",
+              "بشدة بالغة (Extreme)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "qd_11",
+            "type": "radio",
+            "required": true,
+            "text": "11. إلى أي درجة أثرت المشكلة على نومك؟\n   (How much difficulty did you have sleeping because of the pain?)",
+            "options": [
+              "لا صعوبة (No difficulty)",
+              "صعوبة خفيفة (Mild difficulty)",
+              "صعوبة متوسطة (Moderate difficulty)",
+              "صعوبة شديدة (Severe difficulty)",
+              "بحيث لا أقدر على النوم (So much I can't sleep)"
+            ],
+            "scoreValues": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Low Back": {
+    "bodyArea": "Low Back",
+    "configId": "low-back-odi",
+    "title": "ODI — Low Back / أسفل الظهر",
+    "description": "Oswestry Disability Index v2.1a. 10 sections scored 0–5 each. Formula: (rawSum / (answered×5)) × 100 → 0–100% (0=no disability, 100=maximum disability).",
+    "promName": "ODI",
+    "scoreCalculation": "odi_ndi",
+    "scoreDirection": "lower_better",
+    "rawMax": 50,
+    "conversionTable": null,
+    "icon": "🧍",
+    "sections": [
+      {
+        "id": "intake",
+        "title": "Pain Intake / تقييم شدة الألم",
+        "questions": [
+          {
+            "id": "pain_scale",
+            "type": "numeric",
+            "required": true,
+            "text": "مستوى الألم الآن (0-10)  /  Current Pain Level (0–10)",
+            "description": "0 = لا يوجد ألم (No pain) ← → 10 = أشد ألم يتخيله العقل (Worst imaginable)",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "scoreValues": null
+          }
+        ]
+      },
+      {
+        "id": "odi_pain",
+        "title": "Pain Intensity / شدة الألم",
+        "questions": [
+          {
+            "id": "odi_pain",
+            "type": "radio",
+            "required": true,
+            "text": "How would you rate your current back pain?",
+            "options": [
+              "I have no pain at the moment  /  لا يوجد ألم",
+              "The pain is very mild  /  ألم خفيف جداً",
+              "The pain is moderate  /  ألم متوسط",
+              "The pain is fairly severe  /  ألم شديد نسبياً",
+              "The pain is very severe  /  ألم شديد جداً",
+              "The pain is the worst imaginable  /  أشد ألم يمكن تخيله"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "odi_care",
+        "title": "Personal Care / العناية الشخصية",
+        "questions": [
+          {
+            "id": "odi_care",
+            "type": "radio",
+            "required": true,
+            "text": "How does your back pain affect your ability to look after yourself?",
+            "options": [
+              "I can look after myself normally without pain",
+              "I can look after myself normally but it is painful",
+              "It is painful and I am slow and careful",
+              "I need some help but manage most personal care",
+              "I need help every day in most aspects of self care",
+              "I do not get dressed; I wash with difficulty and stay in bed"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "odi_lifting",
+        "title": "Lifting / رفع الأشياء",
+        "questions": [
+          {
+            "id": "odi_lifting",
+            "type": "radio",
+            "required": true,
+            "text": "How does your back pain affect your ability to lift things?",
+            "options": [
+              "I can lift heavy weights without extra pain",
+              "I can lift heavy weights but it gives extra pain",
+              "Pain prevents me lifting heavy weights off the floor, but I can if conveniently placed",
+              "Pain prevents me lifting heavy weights, but I manage light to medium if conveniently placed",
+              "I can lift only very light weights",
+              "I cannot lift or carry anything at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "odi_walking",
+        "title": "Walking / المشي",
+        "questions": [
+          {
+            "id": "odi_walking",
+            "type": "radio",
+            "required": true,
+            "text": "How does your back pain affect your ability to walk?",
+            "options": [
+              "Pain does not prevent me walking any distance",
+              "Pain prevents me walking more than 1 mile (1.6 km)",
+              "Pain prevents me walking more than 0.5 mile (800 m)",
+              "Pain prevents me walking more than 100 yards (90 m)",
+              "I can only walk using a stick or crutches",
+              "I am in bed most of the time and have to crawl to the toilet"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "odi_sitting",
+        "title": "Sitting / الجلوس",
+        "questions": [
+          {
+            "id": "odi_sitting",
+            "type": "radio",
+            "required": true,
+            "text": "How does your back pain affect your ability to sit?",
+            "options": [
+              "I can sit in any chair as long as I like",
+              "I can only sit in my favourite chair as long as I like",
+              "Pain prevents me sitting more than 1 hour",
+              "Pain prevents me sitting more than 30 minutes",
+              "Pain prevents me sitting more than 10 minutes",
+              "Pain prevents me sitting at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "odi_standing",
+        "title": "Standing / الوقوف",
+        "questions": [
+          {
+            "id": "odi_standing",
+            "type": "radio",
+            "required": true,
+            "text": "How does your back pain affect your ability to stand?",
+            "options": [
+              "I can stand as long as I want without extra pain",
+              "I can stand as long as I want but it gives extra pain",
+              "Pain prevents me standing more than 1 hour",
+              "Pain prevents me standing more than 30 minutes",
+              "Pain prevents me standing more than 10 minutes",
+              "Pain prevents me standing at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "odi_sleeping",
+        "title": "Sleeping / النوم",
+        "questions": [
+          {
+            "id": "odi_sleeping",
+            "type": "radio",
+            "required": true,
+            "text": "How does your back pain affect your sleep?",
+            "options": [
+              "My sleep is never disturbed by pain",
+              "My sleep is occasionally disturbed by pain",
+              "Because of pain I have less than 6 hours sleep",
+              "Because of pain I have less than 4 hours sleep",
+              "Because of pain I have less than 2 hours sleep",
+              "Pain prevents me from sleeping at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "odi_sexlife",
+        "title": "Sex Life / الحياة الزوجية",
+        "questions": [
+          {
+            "id": "odi_sexlife",
+            "type": "radio",
+            "required": true,
+            "text": "How does your back pain affect your sex life (if applicable)?",
+            "options": [
+              "My sex life is normal and causes no extra pain",
+              "My sex life is normal but causes some extra pain",
+              "My sex life is nearly normal but is very painful",
+              "My sex life is severely restricted by pain",
+              "My sex life is nearly absent because of pain",
+              "Pain prevents any sex life at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "odi_social",
+        "title": "Social Life / الحياة الاجتماعية",
+        "questions": [
+          {
+            "id": "odi_social",
+            "type": "radio",
+            "required": true,
+            "text": "How does your back pain affect your social life?",
+            "options": [
+              "My social life is normal and causes no extra pain",
+              "My social life is normal but increases the degree of pain",
+              "Pain has no significant effect on my social life apart from limiting energetic interests (e.g. sport)",
+              "Pain has restricted my social life and I do not go out as often",
+              "Pain has restricted my social life to my home",
+              "I have no social life because of pain"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "odi_travel",
+        "title": "Traveling / السفر والتنقل",
+        "questions": [
+          {
+            "id": "odi_travel",
+            "type": "radio",
+            "required": true,
+            "text": "How does your back pain affect your ability to travel?",
+            "options": [
+              "I can travel anywhere without extra pain",
+              "I can travel anywhere but it gives extra pain",
+              "Pain is bad but I manage journeys over 2 hours",
+              "Pain restricts me to journeys of less than 1 hour",
+              "Pain restricts me to short necessary journeys under 30 minutes",
+              "Pain prevents me from traveling except to receive treatment"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Neck & Cervical": {
+    "bodyArea": "Neck & Cervical",
+    "configId": "neck-cervical-ndi",
+    "title": "NDI — Neck & Cervical / الرقبة والعنق",
+    "description": "Neck Disability Index. 10 sections scored 0–5 each. Formula: (rawSum / (answered×5)) × 100 → 0–100% (0=no disability, 100=maximum disability).",
+    "promName": "NDI",
+    "scoreCalculation": "odi_ndi",
+    "scoreDirection": "lower_better",
+    "rawMax": 50,
+    "conversionTable": null,
+    "icon": "🙇",
+    "sections": [
+      {
+        "id": "intake",
+        "title": "Pain Intake / تقييم شدة الألم",
+        "questions": [
+          {
+            "id": "pain_scale",
+            "type": "numeric",
+            "required": true,
+            "text": "مستوى الألم الآن (0-10)  /  Current Pain Level (0–10)",
+            "description": "0 = لا يوجد ألم (No pain) ← → 10 = أشد ألم يتخيله العقل (Worst imaginable)",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "scoreValues": null
+          }
+        ]
+      },
+      {
+        "id": "ndi_pain",
+        "title": "Pain Intensity / شدة الألم",
+        "questions": [
+          {
+            "id": "ndi_pain",
+            "type": "radio",
+            "required": true,
+            "text": "How would you rate your current neck pain?",
+            "options": [
+              "I have no pain at the moment",
+              "The pain is very mild at the moment",
+              "The pain is moderate at the moment",
+              "The pain is fairly severe at the moment",
+              "The pain is very severe at the moment",
+              "The pain is the worst imaginable at the moment"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ndi_care",
+        "title": "Personal Care / العناية الشخصية",
+        "questions": [
+          {
+            "id": "ndi_care",
+            "type": "radio",
+            "required": true,
+            "text": "How does your neck pain affect your ability to look after yourself?",
+            "options": [
+              "I can look after myself normally without extra pain",
+              "I can look after myself normally but it causes extra pain",
+              "It is painful to look after myself and I am slow and careful",
+              "I need some help but manage most of my personal care",
+              "I need help every day in most aspects of self care",
+              "I do not get dressed, wash with difficulty and stay in bed"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ndi_lifting",
+        "title": "Lifting / رفع الأشياء",
+        "questions": [
+          {
+            "id": "ndi_lifting",
+            "type": "radio",
+            "required": true,
+            "text": "How does your neck pain affect your ability to lift things?",
+            "options": [
+              "I can lift heavy weights without extra pain",
+              "I can lift heavy weights but it gives extra pain",
+              "Pain prevents me lifting heavy weights off the floor, but I can if conveniently placed",
+              "Pain prevents me lifting heavy weights, but I can manage light to medium if conveniently placed",
+              "I can lift only very light weights",
+              "I cannot lift or carry anything at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ndi_reading",
+        "title": "Reading / القراءة",
+        "questions": [
+          {
+            "id": "ndi_reading",
+            "type": "radio",
+            "required": true,
+            "text": "How does your neck pain affect your ability to read?",
+            "options": [
+              "I can read as much as I want with no neck pain",
+              "I can read as much as I want with slight neck pain",
+              "I can read as much as I want with moderate neck pain",
+              "I cannot read as much as I want because of moderate neck pain",
+              "I cannot read as much as I want because of severe neck pain",
+              "I cannot read at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ndi_headaches",
+        "title": "Headaches / الصداع",
+        "questions": [
+          {
+            "id": "ndi_headaches",
+            "type": "radio",
+            "required": true,
+            "text": "How does your neck pain relate to headaches?",
+            "options": [
+              "I have no headaches at all",
+              "I have slight headaches which come infrequently",
+              "I have moderate headaches which come infrequently",
+              "I have moderate headaches which come frequently",
+              "I have severe headaches which come frequently",
+              "I have headaches almost all the time"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ndi_concentration",
+        "title": "Concentration / التركيز",
+        "questions": [
+          {
+            "id": "ndi_concentration",
+            "type": "radio",
+            "required": true,
+            "text": "How does your neck pain affect your ability to concentrate?",
+            "options": [
+              "I can concentrate fully when I want with no difficulty",
+              "I can concentrate fully with slight difficulty",
+              "I have a fair degree of difficulty concentrating",
+              "I have a lot of difficulty concentrating",
+              "I have a great deal of difficulty concentrating",
+              "I cannot concentrate at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ndi_work",
+        "title": "Work / العمل",
+        "questions": [
+          {
+            "id": "ndi_work",
+            "type": "radio",
+            "required": true,
+            "text": "How does your neck pain affect your work?",
+            "options": [
+              "I can do as much work as I want",
+              "I can only do my usual work, but no more",
+              "I can do most of my usual work, but no more",
+              "I cannot do my usual work",
+              "I can hardly do any work at all",
+              "I cannot do any work at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ndi_driving",
+        "title": "Driving / قيادة السيارة",
+        "questions": [
+          {
+            "id": "ndi_driving",
+            "type": "radio",
+            "required": true,
+            "text": "How does your neck pain affect driving?",
+            "options": [
+              "I can drive my car without any neck pain",
+              "I can drive my car as long as I want with slight neck pain",
+              "I can drive my car as long as I want with moderate neck pain",
+              "I cannot drive my car as long as I want because of moderate neck pain",
+              "I can hardly drive at all because of severe neck pain",
+              "I cannot drive my car at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ndi_sleeping",
+        "title": "Sleeping / النوم",
+        "questions": [
+          {
+            "id": "ndi_sleeping",
+            "type": "radio",
+            "required": true,
+            "text": "How does your neck pain affect your sleep?",
+            "options": [
+              "I have no trouble sleeping",
+              "My sleep is slightly disturbed (less than 1 hour sleepless)",
+              "My sleep is mildly disturbed (1–2 hours sleepless)",
+              "My sleep is moderately disturbed (2–3 hours sleepless)",
+              "My sleep is greatly disturbed (3–5 hours sleepless)",
+              "My sleep is completely disturbed (5+ hours sleepless)"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ndi_recreation",
+        "title": "Recreation / الأنشطة الترفيهية",
+        "questions": [
+          {
+            "id": "ndi_recreation",
+            "type": "radio",
+            "required": true,
+            "text": "How does your neck pain affect your recreation activities?",
+            "options": [
+              "I am able to engage in all my recreation activities with no neck pain",
+              "I am able to engage in all my recreation activities with some neck pain",
+              "I am able to engage in most, but not all, of my usual recreation activities",
+              "I am able to engage in only a few of my usual recreation activities",
+              "I can hardly do any recreation activities because of neck pain",
+              "I cannot do any recreation activities at all"
+            ],
+            "scoreValues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Foot & Ankle": {
+    "bodyArea": "Foot & Ankle",
+    "configId": "foot-ankle-sefas",
+    "title": "SEFAS — Foot & Ankle / القدم والكاحل",
+    "description": "Self-Reported Foot and Ankle Score (SEFAS). 12 items scored 0–4 (4=No difficulty, 0=Unable). Formula: (rawSum / 48) × 100 → 0–100 (0=worst, 100=best).",
+    "promName": "SEFAS",
+    "scoreCalculation": "sefas",
+    "scoreDirection": "higher_better",
+    "rawMax": 48,
+    "conversionTable": null,
+    "icon": "🦶",
+    "sections": [
+      {
+        "id": "intake",
+        "title": "Pain Intake / تقييم شدة الألم",
+        "questions": [
+          {
+            "id": "pain_scale",
+            "type": "numeric",
+            "required": true,
+            "text": "مستوى الألم الآن (0-10)  /  Current Pain Level (0–10)",
+            "description": "0 = لا يوجد ألم (No pain) ← → 10 = أشد ألم يتخيله العقل (Worst imaginable)",
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "scoreValues": null
+          }
+        ]
+      },
+      {
+        "id": "sefas",
+        "title": "SEFAS — استبيان القدم والكاحل (12 أسئلة)",
+        "questions": [
+          {
+            "id": "sf_1",
+            "type": "radio",
+            "required": true,
+            "text": "1. الألم في قدمك / كاحلك أثناء الراحة\n   (Pain in your foot/ankle at rest)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_2",
+            "type": "radio",
+            "required": true,
+            "text": "2. الألم في قدمك / كاحلك أثناء المشي على سطح مستوٍ\n   (Pain when walking on a flat surface)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_3",
+            "type": "radio",
+            "required": true,
+            "text": "3. الألم في قدمك / كاحلك أثناء الليل\n   (Pain in your foot/ankle at night)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_4",
+            "type": "radio",
+            "required": true,
+            "text": "4. مسافة المشي محدودة بسبب قدمك / كاحلك\n   (Walking distance is limited by your foot/ankle)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_5",
+            "type": "radio",
+            "required": true,
+            "text": "5. المشي على أرض غير مستوية\n   (Walking on uneven ground)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_6",
+            "type": "radio",
+            "required": true,
+            "text": "6. صعود أو نزول الدرج\n   (Walking up or down stairs)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_7",
+            "type": "radio",
+            "required": true,
+            "text": "7. الوقوف لفترة طويلة\n   (Standing for a long period)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_8",
+            "type": "radio",
+            "required": true,
+            "text": "8. إيجاد أحذية مريحة\n   (Finding footwear that is comfortable)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_9",
+            "type": "radio",
+            "required": true,
+            "text": "9. العمل أو الأنشطة اليومية محدودة بسبب قدمك / كاحلك\n   (Work or daily activities limited by foot/ankle)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_10",
+            "type": "radio",
+            "required": true,
+            "text": "10. الأنشطة الرياضية أو الترفيهية محدودة بسبب قدمك / كاحلك\n   (Leisure or sporting activities limited by foot/ankle)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_11",
+            "type": "radio",
+            "required": true,
+            "text": "11. الثقة والتوازن أثناء المشي\n   (Confidence / stability when walking)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "id": "sf_12",
+            "type": "radio",
+            "required": true,
+            "text": "12. بشكل عام، كم أثرت مشكلة قدمك / كاحلك على حياتك اليومية هذا الأسبوع؟\n   (Overall, how much has your foot/ankle problem interfered with daily life this week?)",
+            "options": [
+              "بلا صعوبة (No difficulty)",
+              "بصعوبة خفيفة (Mild difficulty)",
+              "بصعوبة متوسطة (Moderate difficulty)",
+              "بصعوبة شديدة (Severe difficulty)",
+              "غير قادر (Unable / Extreme)"
+            ],
+            "scoreValues": [
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
