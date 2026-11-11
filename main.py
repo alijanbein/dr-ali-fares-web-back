@@ -20,7 +20,9 @@ app = FastAPI(title="Dr. Ali Fares - Website Backend")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[o.strip() for o in os.getenv("ALLOWED_ORIGINS", "http://localhost:5180").split(",") if o.strip()],
+    # The browser sends the origin without a trailing "/", so one pasted with
+    # it (https://site.com/) would never match and every request would fail CORS.
+    allow_origins=[o.strip().rstrip("/") for o in os.getenv("ALLOWED_ORIGINS", "http://localhost:5180").split(",") if o.strip()],
     # Lets a phone on the same network open the website's dev server.
     allow_origin_regex=r"http://(192\.168|10\.\d+|172\.(1[6-9]|2\d|3[01]))\.\d+\.\d+:5180",
     allow_methods=["GET", "POST", "PATCH"],
